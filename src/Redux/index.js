@@ -6,6 +6,7 @@ export default () => {
   /* ------------- Assemble The Reducers ------------- */
   const rootReducer = combineReducers({
     support: require('./SupportRedux').reducer,
+    user   : require('./UserRedux').reducer,
   });
   return configureStore(rootReducer, rootSaga)
 }
